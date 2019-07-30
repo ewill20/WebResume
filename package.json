@@ -1,7 +1,7 @@
 {
-  "name": "theadaptivetraveler",
+  "name": "web-resume-ewill",
   "version": "1.0.0",
-  "description": "Culture Travel App",
+  "description": "Web Portfolio",
   "main": "server.js",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -10,7 +10,7 @@
     "chai": "^4.1.2",
     "console.table": "^0.9.1",
     "dotenv": "^4.0.0",
-    "express": "^4.16.2",
+    "express": "^4.17.1",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "favicon": "0.0.2",
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ewill20/TheAdaptiveTraveler.git"
+    "url": "git+https://github.com/ewill20/WebResume.git"
   },
   "keywords": [
     "Cultural",
@@ -46,7 +46,7 @@
   "author": "Eric Willard",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ewill20/TheAdaptiveTraveler/issues"
+    "url": "https://github.com/ewill20/WebResume/issues"
   },
-  "homepage": "https://github.com/ewill20/TheAdaptiveTraveler#readme"
+  "homepage": "https://github.com/ewill20/WebResume#readme"
 }
