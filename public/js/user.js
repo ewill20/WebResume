@@ -44,7 +44,7 @@ $(document).ready(function() {
 
     function submitUser(user) {
         $.post("/api/user", post, function() {
-            window.location.href = "/profile";
+            window.location.href = "/home";
         });
     }
 
@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     function renderUserList(data) {
         if (!data.length) {
-            window.location.href = "/popDestinations";
+            window.location.href = "/webPort";
         }
     }
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
             data: user
         })
         .done(function() {
-            window.location.href = "/profile";
+            window.location.href = "/home";
         });
     }
 });

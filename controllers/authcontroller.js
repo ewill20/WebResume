@@ -6,9 +6,9 @@ exports.main = function (req,res) {
   res.render('main');
   
 }
-exports.landing = function(req,res){
+exports.home = function(req,res){
 
-	res.render('landing'); 
+	res.render('home'); 
 
 }
 exports.about = function(req,res) {
@@ -16,57 +16,46 @@ exports.about = function(req,res) {
   res.render('about');
 
 }
-exports.berlin = function(req,res) {
-
-  res.render('berlin');
-
-}
-exports.popDestinations = function(req, res) {
-
-  res.render('popDestinations');
-  
-}
-exports.kyoto = function(req, res) {
-
-  res.render('kyoto');
-
-}
-exports.paris = function(req, res) {
-
-  res.render('paris');
-
-}
-exports.hangzhou = function(req, res) {
-  
-  res.render('hangzhou');
-  
-}
 exports.contact = function(req,res) {
 
   res.render('contact');
 
 }
-exports.signup = function(req,res){
-  
-    res.render('signup'); 
+exports.education = function(req, res) {
+
+  res.render('education');
   
 }
-exports.signin = function(req,res){
+exports.experience = function(req, res) {
 
-	res.render('signin'); 
+  res.render('experience');
 
 }
+exports.photo = function(req, res) {
 
-exports.profile = function(req,res){
+  res.render('photo');
 
-	res.render('profile'); 
+}
+exports.video = function(req, res) {
+  
+  res.render('video');
+  
+}
+exports.skills = function(req,res) {
 
+  res.render('skills');
+
+}
+exports.webPort = function(req,res){
+  
+    res.render('webPort'); 
+  
 }
 
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
-  res.redirect('/landing');
+  res.redirect('/home');
   });
 
 }

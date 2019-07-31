@@ -4,28 +4,26 @@ var authController = require('../controllers/authcontroller.js');
 
 module.exports = function(app,passport){
 
-app.get('/landing', authController.landing);
+app.get('/home', authController.home);
 
 app.get('/about', authController.about);
 
 app.get('/contact', authController.contact);
 
-app.get('/signup', authController.signup);
+app.get('/education', authController.education);
 
-app.get('/signin', authController.signin);
+app.get('/experience', authController.experience);
 
-app.get('/berlin', authController.berlin);
+app.get('/photo', authController.photo);
 
-app.get('/kyoto', authController.kyoto);
+app.get('/skills', authController.skills);
 
-app.get('/hangzhou', authController.hangzhou);
+app.get('/video', authController.video);
 
-app.get('/paris', authController.paris);
-
-app.get('/popDestinations', authController.popDestinations);
+app.get('/webPort', authController.webPort);
 
 
-app.post('/landing', function(req, res, next) {
+app.post('/home', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');
     // passport.authenticate('local-signup', function(err, user, info) {
@@ -63,7 +61,7 @@ function isLoggedIn(req, res, next) {
     if (req.isAuthenticated())
         return next();
 
-    res.redirect('/signin');
+    res.redirect('/home');
 }
 
 
