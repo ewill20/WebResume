@@ -40,7 +40,7 @@ app.engine('hbs', exphbs({extname: '.hbs',defaultLayout: 'main'}));
 app.set('view engine', '.hbs');
 
 app.get('/', function(req, res) {
-    res.render('home');
+    res.render("home");
 });
 // app.get('/profile', function(req, res) {
 //     console.log(req.params.user);
@@ -50,42 +50,36 @@ app.get('/', function(req, res) {
 //load passport strategies
 require('./config/passport/passport.js')(passport, db.user);
 
-//Routes
-// var authRoute = require('./routes/auth.js')(app,passport);
-// require("./routes/api-routes.js")(app);
-// require("./routes/user-api-routes.js")(app);
-
 //Models
     var models = require("./models");
+
+//Routes
+var authRoute = require('./routes/auth.js')(app,passport);
+require("./routes/api-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
+
+
 
 app.get('/', function(req, res) {
 
     res.send('Welcome')
 
-    res.render(path.join(__dirname, 'home.hbs'))
-});
-app.get('/about', function(req, res) {
+    res.render(path.join(__dirname, "home.hbs"))
+});app.get('/about', function(req, res) {
     res.render(path.join(__dirname, "about.hbs"))
-});
-app.get('/contact', function(req, res) {
+});app.get('/contact', function(req, res) {
     res.render(path.join(__dirname, "contact.hbs"))
-});
-app.get('/video', function(req, res) {
+});app.get('/video', function(req, res) {
     res.render(path.join(__dirname, "video.hbs"))
-});
-app.get('/skills', function(req, res) {
+});app.get('/skills', function(req, res) {
     res.render(path.join(__dirname, "skills.hbs"))
-});
-app.get('/education', function(req, res) {
+});app.get('/education', function(req, res) {
     res.render(path.join(__dirname, "education.hbs"))
-});
-app.get('/experience', function(req, res) {
+});app.get('/experience', function(req, res) {
     res.render(path.join(__dirname, "experience.hbs"))
-});
-app.get('/photo', function(req, res) {
+});app.get('/photo', function(req, res) {
     res.render(path.join(__dirname, "photo.hbs"))
-});
-app.get('/webPort', function(req, res) {
+});app.get('/webPort', function(req, res) {
     res.render(path.join(__dirname, "webPort.hbs"))
 });
 
