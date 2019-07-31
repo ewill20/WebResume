@@ -1,15 +1,15 @@
 {
     "development": {
         "username": "root",
-        "password": "null",
+        "password": "EW141984",
         "database": "web-resume-ewill",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "test": {
         "username":"root",
-        "password": "null",
-        "database":"web-resume-ewill",
+        "password": "EW141984",
+        "database":"WebResume",
         "host":"127.0.0.1",
         "dialect":"mysql"
     },
