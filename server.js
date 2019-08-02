@@ -42,10 +42,10 @@ app.set('view engine', 'hbs');
 app.get('/', function(req, res) {
     res.render("home");
 });
-app.get('/home', function(req, res) {
-    console.log(req.params.user);
-    res.render('home');
-});
+// app.get('/home', function(req, res) {
+//     console.log(req.params.user);
+//     res.render('home');
+// });
 
 //load passport strategies
 require('./config/passport/passport.js')(passport, db.user);
