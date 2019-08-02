@@ -6,10 +6,8 @@ var passport = require('passport')
 var session = require('express-session')
 var bodyParser = require('body-parser')
 var env = require('dotenv').load()
-// var customEnv = require('env');
 var exphbs = require('express-handlebars')
 var path = require('path')
-// var fs = require('fs')
 var mysql = require('mysql')
 var db = require("./models")
 
@@ -32,15 +30,15 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type: "application/vnd.api+json"}));
 
 // // Static directory
-// app.use(express.static("public"));
+app.use(express.static("public"));
 
 // For Handlebars //
 app.set('views', './views');
-app.engine('hbs', exphbs({extname: '.hbs', defaultLayout: 'main'}));
-app.set('view engine', 'hbs');
+app.engine('hbs', exphbs({extname: '.hbs',defaultLayout: 'main'}));
+app.set('view engine', '.hbs');
 
 app.get('/', function(req, res) {
-    res.render("home");
+    res.render('home');
 });
 // app.get('/home', function(req, res) {
 //     console.log(req.params.user);
@@ -54,9 +52,9 @@ require('./config/passport/passport.js')(passport, db.user);
     var models = require("./models");
 
 //Routes
-var authRoute = require('./routes/auth.js')(app,passport);
-require("./routes/api-routes.js")(app);
-require("./routes/user-api-routes.js")(app);
+// var authRoute = require('./routes/auth.js')(app,passport);
+// require("./routes/api-routes.js")(app);
+// require("./routes/user-api-routes.js")(app);
 
 
 
