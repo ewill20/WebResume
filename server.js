@@ -36,16 +36,16 @@ app.use(bodyParser.json({type: "application/vnd.api+json"}));
 
 // For Handlebars //
 app.set('views', './views');
-app.engine('hbs', exphbs({extname: '.hbs',defaultLayout: 'main'}));
+app.engine('hbs', exphbs({extname: '.hbs', defaultLayout: 'main'}));
 app.set('view engine', 'hbs');
 
 app.get('/', function(req, res) {
+    res.render("home");
+});
+app.get('/home', function(req, res) {
+    console.log(req.params.user);
     res.render('home');
 });
-// app.get('/profile', function(req, res) {
-//     console.log(req.params.user);
-//     res.render('profile');
-// });
 
 //load passport strategies
 require('./config/passport/passport.js')(passport, db.user);
@@ -54,9 +54,9 @@ require('./config/passport/passport.js')(passport, db.user);
     var models = require("./models");
 
 //Routes
-// var authRoute = require('./routes/auth.js')(app,passport);
-// require("./routes/api-routes.js")(app);
-// require("./routes/user-api-routes.js")(app);
+var authRoute = require('./routes/auth.js')(app,passport);
+require("./routes/api-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
 
 
 
@@ -96,7 +96,7 @@ app.get('/webPort', function(req, res) {
 // =======================================================================//
 // Function to handle requests and responses //
 var env = require('dotenv').load();
-var envConfig = require('dotenv').config();
+// var envConfig = require('dotenv').config();
 
 //Sync Database
 db.sequelize.sync({force: false}).then(function() {
