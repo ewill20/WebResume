@@ -118,9 +118,9 @@ $("#creating-profile").on("click", function() {
 });
 
 // click listener and event handler for 'home' link //
-$('#home-link').on('click', function() {
-	window.location = '/popDestinations';
-});
+// $('#home-link').on('click', function() {
+// 	window.location = '/popDestinations';
+// });
 
 // click listener and event handler for 'account' link //
 // $('#account-link').on('click', function() {
