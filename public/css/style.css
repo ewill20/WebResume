@@ -108,6 +108,10 @@ div.container-fluid {
 	background-image: url("../images/concrete-texture.png");
 	min-height: 100%;
 }
+#content {
+	min-height: calc(100vh - 50px);
+	margin-bottom: 50px;
+}
 .clickTrip {
 	padding: 10px;
 }
