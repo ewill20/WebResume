@@ -119,7 +119,7 @@ $("#creating-profile").on("click", function() {
 
 // click listener and event handler for 'home' link //
 $('#home-link').on('click', function() {
-	window.location = '/home';
+	window.location = '/popDestinations';
 });
 
 // click listener and event handler for 'account' link //
