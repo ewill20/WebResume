@@ -35,7 +35,7 @@ app.use(express.static("public"));
 // For Handlebars //
 app.set('views', './views');
 app.engine('hbs', exphbs({extname: '.hbs',defaultLayout: 'main'}));
-app.set('view engine', '.hbs');
+app.set('view engine', 'hbs');
 
 app.get('/', function(req, res) {
     res.render('home');
