@@ -51,6 +51,11 @@ exports.webPort = function(req,res){
     res.render('webPort'); 
   
 }
+exports.popDestinations = function(req, res) {
+
+  res.render('popDestinations');
+  
+}
 
 exports.logout = function(req,res){
 

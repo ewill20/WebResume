@@ -20,7 +20,7 @@ var db = require("./models")
  app.use(passport.initialize());
  app.use(passport.session()); // persistent login sessions
 
-var PORT = app.listen(process.env.PORT) || 5000;
+var PORT = process.env.PORT || 5000;
 
 
 // Sets up the Express app to handle data parsing
@@ -33,9 +33,11 @@ app.use(bodyParser.json({type: "application/vnd.api+json"}));
 app.use(express.static("public"));
 
 // For Handlebars //
-app.set('views', './views');
-app.engine('hbs', exphbs({extname: '.hbs',defaultLayout: 'main'}));
-app.set('view engine', 'hbs');
+
+app.engine('hbs', exphbs({extname: '.hbs',defaultLayout: 'main', layoutsDir: path.join(__dirname, "views/layouts")
+}));
+app.set('view engine', '.hbs');
+app.set('views', path.join(__dirname, "views"));
 
 app.get('/', function(req, res) {
     res.render('home');
