@@ -117,30 +117,30 @@ $("#creating-profile").on("click", function() {
 	}
 });
 
-// click listener and event handler for 'home' link //
-// $('#home-link').on('click', function() {
-// 	window.location = '/popDestinations';
-// });
-
-// click listener and event handler for 'account' link //
-// $('#account-link').on('click', function() {
-// 	window.location = '/profile';
-// })
-
-$('#pop-destinations').click(function() {
-	alert("you have clicked a link");
-	window.location = '/popDestinations';
+// click listener and event handler for 'sign out' link //
+$('#sign-out').on('click', function() {
+	alert('You have been signed out');
+	window.location = '/landing';
 });
 
-// $("#pop-destinations-blue").on("click", function() {
-// 	window.location = '/popDestinations';
-// })
-// $('#pop-destinations-aqua').on("click", function() {
-// 	window.location = '/popDestinations';
-// })
-// $('#send-button').on('click', function() {
-// 	window.location = '/profile';
-// })
+// click listener and event handler for 'account' link //
+$('#account-link').on('click', function() {
+	window.location = '/profile';
+})
+
+$('#pop-destinations').on('click', function() {
+	window.location = '/popDestinations';
+})
+
+$("#pop-destinations-blue").on("click", function() {
+	window.location = '/popDestinations';
+})
+$('#pop-destinations-aqua').on("click", function() {
+	window.location = '/popDestinations';
+})
+$('#send-button').on('click', function() {
+	window.location = '/profile';
+})
 
 
 
