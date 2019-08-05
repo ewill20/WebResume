@@ -127,9 +127,10 @@ $("#creating-profile").on("click", function() {
 // 	window.location = '/profile';
 // })
 
-// $('#pop-destinations').on('click', function() {
-// 	window.location = '/popDestinations';
-// })
+$('#pop-destinations').click(function() {
+	alert("you have clicked a link");
+	window.location = '/popDestinations';
+});
 
 // $("#pop-destinations-blue").on("click", function() {
 // 	window.location = '/popDestinations';
