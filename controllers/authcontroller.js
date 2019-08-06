@@ -90,6 +90,19 @@ exports.photo = function(req,res){
   res.render('photo'); 
 
 }
+
+exports.skills = function(req,res){
+
+  res.render('skills'); 
+
+}
+
+exports.video = function(req,res){
+
+  res.render('video'); 
+
+}
+
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
