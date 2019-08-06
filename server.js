@@ -84,6 +84,8 @@ app.get('/about', function(req, res) {
   res.render(path.join(__dirname, "signup.hbs"))
 });app.get('/profile', function(req,res) {
   res.render(path.join(__dirname, "profile.hbs"))
+});app.get('/home', function(req,res) {
+  res.render(path.join(__dirname, "home.hbs"))
 });
 
 

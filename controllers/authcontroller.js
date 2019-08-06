@@ -56,13 +56,16 @@ exports.signin = function(req,res){
 	res.render('signin'); 
 
 }
-
 exports.profile = function(req,res){
 
 	res.render('profile'); 
 
 }
+exports.home = function(req,res){
 
+  res.render('home'); 
+
+}
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
