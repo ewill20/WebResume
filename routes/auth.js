@@ -28,6 +28,8 @@ app.get('/home', authController.home);
 
 app.get('/webPort', authController.webPort);
 
+app.get('/experience', authController.experience);
+
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');

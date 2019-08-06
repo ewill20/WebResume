@@ -73,6 +73,11 @@ exports.webPort = function(req,res){
 
 }
 
+exports.experience = function(req,res){
+
+  res.render('experience'); 
+
+}
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
