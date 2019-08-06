@@ -24,6 +24,7 @@ app.get('/paris', authController.paris);
 
 app.get('/popDestinations', authController.popDestinations);
 
+app.get('/home', authController.home);
 
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
