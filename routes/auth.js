@@ -26,6 +26,8 @@ app.get('/popDestinations', authController.popDestinations);
 
 app.get('/home', authController.home);
 
+app.get('/webPort', authController.webPort);
+
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');

@@ -66,6 +66,13 @@ exports.home = function(req,res){
   res.render('home'); 
 
 }
+
+exports.webPort = function(req,res){
+
+  res.render('webPort'); 
+
+}
+
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
