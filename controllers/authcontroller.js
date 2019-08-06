@@ -78,6 +78,12 @@ exports.experience = function(req,res){
   res.render('experience'); 
 
 }
+
+exports.education = function(req,res){
+
+  res.render('education'); 
+
+}
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
