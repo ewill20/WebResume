@@ -84,6 +84,12 @@ exports.education = function(req,res){
   res.render('education'); 
 
 }
+
+exports.photo = function(req,res){
+
+  res.render('photo'); 
+
+}
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {

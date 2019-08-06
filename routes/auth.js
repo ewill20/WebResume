@@ -32,6 +32,8 @@ app.get('/experience', authController.experience);
 
 app.get('/education', authController.education);
 
+app.get('/photo', authController.photo);
+
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');
