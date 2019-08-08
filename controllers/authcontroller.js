@@ -6,9 +6,9 @@ exports.main = function (req,res) {
   res.render('main');
   
 }
-exports.landing = function(req,res){
+exports.home = function(req,res){
 
-	res.render('landing'); 
+	res.render('home'); 
 
 }
 exports.about = function(req,res) {
@@ -61,11 +61,11 @@ exports.profile = function(req,res){
 	res.render('profile'); 
 
 }
-exports.home = function(req,res){
+// exports.home = function(req,res){
 
-  res.render('home'); 
+//   res.render('home'); 
 
-}
+// }
 
 exports.webPort = function(req,res){
 
@@ -106,7 +106,7 @@ exports.video = function(req,res){
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
-  res.redirect('/landing');
+  res.redirect('/home');
   });
 
 }

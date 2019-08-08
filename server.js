@@ -39,7 +39,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
     app.set('view engine', '.hbs');
 
 app.get('/', function(req, res){
-    res.render("landing");
+    res.render("home");
   });
 app.get('/profile', function(req, res) {
   console.log(req.params.user);
@@ -72,7 +72,7 @@ app.get('/', function(req, res) {
 
   res.send('Welcome')
 
-  res.render(path.join(__dirname, "landing.hbs"))
+  res.render(path.join(__dirname, "home.hbs"))
 });
 app.get('/about', function(req, res) {
   res.render(path.join(__dirname, "about.hbs"))
@@ -84,9 +84,9 @@ app.get('/about', function(req, res) {
   res.render(path.join(__dirname, "signup.hbs"))
 });app.get('/profile', function(req,res) {
   res.render(path.join(__dirname, "profile.hbs"))
-});app.get('/home', function(req,res) {
-  res.render(path.join(__dirname, "home.hbs"))
-});
+// });app.get('/home', function(req,res) {
+//   res.render(path.join(__dirname, "home.hbs"))
+// });
 
 
 // ROUTER
