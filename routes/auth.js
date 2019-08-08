@@ -4,7 +4,7 @@ var authController = require('../controllers/authcontroller.js');
 
 module.exports = function(app,passport){
 
-app.get('/home', authController.home);
+app.get('/landing', authController.landing);
 
 app.get('/about', authController.about);
 
@@ -24,7 +24,7 @@ app.get('/paris', authController.paris);
 
 app.get('/popDestinations', authController.popDestinations);
 
-// app.get('/home', authController.home);
+app.get('/home', authController.home);
 
 app.get('/webPort', authController.webPort);
 
@@ -38,7 +38,7 @@ app.get('/skills', authController.skills);
 
 app.get('/video', authController.video);
 
-app.post('/home', function(req, res, next) {
+app.post('/landing', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');
     // passport.authenticate('local-signup', function(err, user, info) {
