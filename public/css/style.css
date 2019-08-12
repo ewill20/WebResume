@@ -19,6 +19,9 @@ div.container-fluid {
 	font-size: 33px;
 	margin-bottom: 0px;
 }
+.mask {
+	padding: 0 15px 0 15px !important;
+}
 .row {
 	height: 350px !important;
 	margin: 20px -15px 20px -15px;
@@ -387,7 +390,7 @@ footer {
 .navbar-brand {
     width: 200px;
     text-align: center;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Acme', sans-serif !important;
     font-size: 48px !important;
 	 height: auto !important; 
 	color: white;
