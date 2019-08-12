@@ -22,6 +22,12 @@ div.container-fluid {
 .mask {
 	padding: 0 15px 0 15px !important;
 }
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xl-4 {
+	margin-bottom: 100px;
+}
+.bottom-panels {
+	margin-bottom: 100px;
+}
 .row {
 	height: 350px !important;
 	margin: 20px -15px 20px -15px;
@@ -328,14 +334,14 @@ a .about {
 }
 footer {
 	position: fixed;
-	background-color: #666666;
+	/*background-color: #666666;*/
 	color: white;
 	padding: 15px 0 20px 0 !important;
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	display: block;
 	text-align: center;
-	border-top: solid #ff4500 2px;
+	/*border-top: solid #ff4500 2px;*/
 	margin-top: 20px;
 	font-size: 18px;
 	margin-bottom: 0;
