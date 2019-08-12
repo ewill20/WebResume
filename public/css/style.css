@@ -19,13 +19,6 @@ div.container-fluid {
 	font-size: 33px;
 	margin-bottom: 0px;
 }
-#tatDesc {
-	display: none;
-}
-a:hover + #tatDesc {
-	display: block;
-	color: white;
-}
 .row {
 	height: 350px !important;
 	margin: 20px -15px 20px -15px;
