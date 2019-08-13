@@ -348,7 +348,10 @@ footer {
 	font-family: 'Acme', sans-serif;
 	bottom: 0;
 }
-
+#jayhawklogo {
+	max-width: 100%;
+	max-height: 300px;
+}
 .wrapper {
 	width: 100%;
 	padding: 0;
