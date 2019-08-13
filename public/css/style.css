@@ -32,6 +32,9 @@ div.container-fluid {
 	height: 350px !important;
 	margin: 20px -15px 20px -15px;
 }
+.top-panels {
+	margin-bottom: 75px;
+}
 #education  {
 	font-size: 15px;
 	font-family: 'Acme', sans-serif;
