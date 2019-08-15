@@ -190,7 +190,10 @@ div.container-fluid {
 	margin-bottom: 0px;
 }
 .panel .panel-header {
-	margin-top: 0px;
+	color: #00b8e6;
+	font-family: 'Acme', sans-serif; 
+	text-align: center;
+	font-size: 30px;
 }
 .connect2 {
 	float: right;
