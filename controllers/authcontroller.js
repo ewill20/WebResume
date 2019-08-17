@@ -103,6 +103,30 @@ exports.video = function(req,res){
 
 }
 
+exports.homeFR = function(req,res){
+
+  res.render('homeFR');
+
+}
+
+exports.aboutFR = function(req,res){
+
+  res.render('aboutFR');
+  
+}
+
+exports.contactFR = function(req,res){
+
+  res.render('contactFR');
+  
+}
+
+exports.homeDE = function(req,res){
+
+  res.render('homeDE');
+  
+}
+
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {

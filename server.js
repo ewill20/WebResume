@@ -78,14 +78,23 @@ app.get('/about', function(req, res) {
   res.render(path.join(__dirname, "about.hbs"))
 });app.get('/contact', function(req, res) {
   res.render(path.join(__dirname, "contact.hbs"))
-});app.get('/signin', function(req, res) {
-  res.render(path.join(__dirname, "signin.hbs"))
-});app.get('/signup', function(req, res) {
-  res.render(path.join(__dirname, "signup.hbs"))
-});app.get('/profile', function(req,res) {
-  res.render(path.join(__dirname, "profile.hbs"))
-});app.get('/home', function(req,res) {
+});//app.get('/signin', function(req, res) {
+//   res.render(path.join(__dirname, "signin.hbs"))
+// });app.get('/signup', function(req, res) {
+//   res.render(path.join(__dirname, "signup.hbs"))
+// });app.get('/profile', function(req,res) {
+//   res.render(path.join(__dirname, "profile.hbs"))
+//});
+app.get('/home', function(req,res) {
   res.render(path.join(__dirname, "home.hbs"))
+});app.get('/about', function(req, res) {
+  res.render(path.join(__dirname, "aboutFR.hbs"))
+});app.get('/contact', function(req, res) {
+  res.render(path.join(__dirname, "contactFR.hbs"))
+});app.get('/homeFR', function(req,res) {
+  res.render(path.join(__dirname, "homeFR.hbs"))
+});app.get('/homeDE', function(req,res) {
+  res.render(path.join(__dirname, "homeDE.hbs"))
 });
 
 

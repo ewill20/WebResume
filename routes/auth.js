@@ -38,6 +38,14 @@ app.get('/skills', authController.skills);
 
 app.get('/video', authController.video);
 
+app.get('/homeFR', authController.homeFR);
+
+app.get('/aboutFR', authController.aboutFR);
+
+app.get('/contactFR', authController.contactFR);
+
+app.get('/homeDE', authController.homeDE);
+
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');
