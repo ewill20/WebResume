@@ -44,7 +44,35 @@ app.get('/aboutFR', authController.aboutFR);
 
 app.get('/contactFR', authController.contactFR);
 
+app.get('/educationFR', authController.educationFR);
+
+app.get('/experienceFR', authController.experienceFR);
+
+app.get('/photoFR', authController.photoFR);
+
+app.get('/skillsFR', authController.skillsFR);
+
+app.get('/videoFR', authController.videoFR);
+
+app.get('/webPortFR', authController.webPortFR);
+
 app.get('/homeDE', authController.homeDE);
+
+app.get('/aboutDE', authController.aboutDE);
+
+app.get('/contactDE', authController.contactDE);
+
+app.get('/educationDE', authController.educationDE);
+
+app.get('/experienceDE', authController.experienceDE);
+
+app.get('/photoDE', authController.photoDE);
+
+app.get('/skillsDE', authController.skillsDE);
+
+app.get('/videoDE', authController.videoDE);
+
+app.get('/webPortDE', authController.webPortDE);
 
 app.post('/landing', function(req, res, next) {
     console.log("whatever");

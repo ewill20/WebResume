@@ -121,9 +121,93 @@ exports.contactFR = function(req,res){
   
 }
 
+exports.educationFR = function(req,res){
+
+  res.render('educationFR');
+  
+}
+
+exports.experienceFR = function(req,res){
+
+  res.render('experienceFR');
+  
+}
+
+exports.photoFR = function(req,res){
+
+  res.render('photoFR');
+  
+}
+
+exports.skillsFR = function(req,res){
+
+  res.render('skillsFR');
+  
+}
+
+exports.videoFR = function(req,res){
+
+  res.render('videoFR');
+  
+}
+
+exports.webPortFR = function(req,res){
+
+  res.render('webPortFR');
+  
+}
+
 exports.homeDE = function(req,res){
 
   res.render('homeDE');
+  
+}
+
+exports.aboutDE = function(req,res){
+
+  res.render('aboutDE');
+  
+}
+
+exports.contactDE = function(req,res){
+
+  res.render('contactDE');
+  
+}
+
+exports.educationDE = function(req,res){
+
+  res.render('educationDE');
+  
+}
+
+exports.experienceDE = function(req,res){
+
+  res.render('experienceDE');
+  
+}
+
+exports.photoDE = function(req,res){
+
+  res.render('photoDE');
+  
+}
+
+exports.skillsDE = function(req,res){
+
+  res.render('skillsDE');
+  
+}
+
+exports.videoDE = function(req,res){
+
+  res.render('videoDE');
+  
+}
+
+exports.webPortDE = function(req,res){
+
+  res.render('webPortDE');
   
 }
 
