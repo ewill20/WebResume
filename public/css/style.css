@@ -411,13 +411,13 @@ footer {
 }
 /* Title */
 .navbar-brand {
-    width: 200px;
+    width: 230px;
     text-align: center;
     font-family: 'Acme', sans-serif !important;
     font-size: 48px !important;
 	 height: auto !important; 
 	color: white;
-	margin-left: 100px !important;
+	margin-left: 25px !important;
 	margin-right: 55px !important;
 }
 .navbar-nav {
