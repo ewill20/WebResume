@@ -29,10 +29,10 @@ div.container-fluid {
 .bottom-panels {
 	margin-bottom: 100px;
 }
-/* .row {
-	height: 350px !important; */
-	/* margin: 20px -15px 20px -15px; */
-/* } */
+.row {
+	/* height: 350px !important; */
+	margin-left: 10px !important;
+}
 /* .top-panels {
 	margin-bottom: 75px;
 } */
