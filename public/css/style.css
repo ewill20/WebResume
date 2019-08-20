@@ -29,13 +29,13 @@ div.container-fluid {
 .bottom-panels {
 	margin-bottom: 100px;
 }
-.row {
-	height: 350px !important;
-	margin: 20px -15px 20px -15px;
-}
-.top-panels {
+/* .row {
+	height: 350px !important; */
+	/* margin: 20px -15px 20px -15px; */
+/* } */
+/* .top-panels {
 	margin-bottom: 75px;
-}
+} */
 #education  {
 	font-size: 15px;
 	font-family: 'Acme', sans-serif;
