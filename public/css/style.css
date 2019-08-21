@@ -47,6 +47,10 @@ div.container-fluid {
 .dropdown-menu li:hover .submenu {
 	visibility: visible
 }
+.navbar .dropdown-menu a {
+	font-size: 1.9375rem !important;
+	font-weight: 400 !important;
+}
 .dropdown:hover .dropdown-menu {
 	display: block;
 }
@@ -442,13 +446,18 @@ footer {
 	min-height: auto !important;
 	margin-bottom: 0px !important;
 }
+#nav-dropdown {
+	margin-top: 20px;
+	font-size: 13px;
+	font-family: 'Acme', sans-serif;
+}
 .navbar-collapse {
 	align-content: center;
 }
 .nav-item {
 	font-size: 25px;
 }
-* {box-sizing:border-box}
+/* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
