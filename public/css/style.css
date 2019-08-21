@@ -41,6 +41,18 @@ div.container-fluid {
 	font-family: 'Acme', sans-serif;
 	color: #777;
 }
+.dropdown-menu .sub-menu {
+	visibility: hidden;
+}
+.dropdown-menu li:hover .submenu {
+	visibility: visible
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown {
+	margin-bottom: 15px;
+}
 #KU {
 	padding-bottom: 20px;
 	font-family: 'Acme', sans-serif;
