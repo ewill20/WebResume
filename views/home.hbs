@@ -40,18 +40,24 @@
             </a>
         </li>
     </ul>
-    
+
     <!--Dropdown for site navigation-->
     <div class="dropdown show">
-  <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-primary dropdown-toggle" href="#" type="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Site Navigation
-  </a>
+  </button>
 
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="/webPort">Web Development</a>
-    <a class="dropdown-item" href="/experience">Experience</a>
-    <a class="dropdown-item" href="/education">Education</a>
-  </div>
+  <ul class="dropdown-menu" role="menu"aria-labelledby="dropdownMenuLink">
+      <li role="presentation">
+    <a class="dropdown-item" role="menuitem" tabindex="-1" href="/webPort">Web Development</a>
+    </li>
+    <li role="presentation">
+    <a class="dropdown-item" role="menuitem" tabindex="-1" href="/experience">Experience</a>
+    </li>
+    <li role="presentation">
+    <a class="dropdown-item" role="menuitem" tabindex="-1" href="/education">Education</a>
+    </li>
+  </ul>
 </div>
 <!--End Dropdown Button-->
 
