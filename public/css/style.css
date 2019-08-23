@@ -428,7 +428,7 @@ footer {
 }
 /* Title */
 .navbar-brand {
-    width: 230px;
+    max-width: -webkit-fill-available;
     text-align: center;
     font-family: 'Acme', sans-serif !important;
     font-size: 48px !important;
