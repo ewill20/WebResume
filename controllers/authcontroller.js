@@ -211,6 +211,60 @@ exports.webPortDE = function(req,res){
   
 }
 
+exports.homeCN = function(req,res){
+
+  res.render('homeCN');
+  
+}
+
+exports.aboutCN = function(req,res){
+
+  res.render('aboutCN');
+  
+}
+
+exports.contactCN = function(req,res){
+
+  res.render('contactCN');
+  
+}
+
+exports.educationCN = function(req,res){
+
+  res.render('educationCN');
+  
+}
+
+exports.experienceCN = function(req,res){
+
+  res.render('experienceCN');
+  
+}
+
+exports.photoCN = function(req,res){
+
+  res.render('photoCN');
+  
+}
+
+exports.skillsCN = function(req,res){
+
+  res.render('skillsCN');
+  
+}
+
+exports.videoCN = function(req,res){
+
+  res.render('videoCN');
+  
+}
+
+exports.webPortCN = function(req,res){
+
+  res.render('webPortCN');
+  
+}
+
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {

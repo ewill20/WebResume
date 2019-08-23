@@ -10,19 +10,19 @@ app.get('/about', authController.about);
 
 app.get('/contact', authController.contact);
 
-app.get('/signup', authController.signup);
+// app.get('/signup', authController.signup);
 
-app.get('/signin', authController.signin);
+// app.get('/signin', authController.signin);
 
-app.get('/berlin', authController.berlin);
+// app.get('/berlin', authController.berlin);
 
-app.get('/kyoto', authController.kyoto);
+// app.get('/kyoto', authController.kyoto);
 
-app.get('/hangzhou', authController.hangzhou);
+// app.get('/hangzhou', authController.hangzhou);
 
-app.get('/paris', authController.paris);
+// app.get('/paris', authController.paris);
 
-app.get('/popDestinations', authController.popDestinations);
+// app.get('/popDestinations', authController.popDestinations);
 
 app.get('/home', authController.home);
 
@@ -73,6 +73,24 @@ app.get('/skillsDE', authController.skillsDE);
 app.get('/videoDE', authController.videoDE);
 
 app.get('/webPortDE', authController.webPortDE);
+
+app.get('/homeCN', authController.homeCN);
+
+app.get('/aboutCN', authController.aboutCN);
+
+app.get('/contactCN', authController.contactCN);
+
+app.get('/webPortCN', authController.webPortCN);
+
+app.get('/experienceCN', authController.experienceCN);
+
+app.get('/educationCN', authController.educationCN);
+
+app.get('/photoCN', authController.photoCN);
+
+app.get('/skillsCN', authController.skillsCN);
+
+app.get('/videoCN', authController.videoCN);
 
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
