@@ -30,7 +30,7 @@ div.container-fluid {
 	margin-bottom: 100px;
 }
 .row {
-	/* height: 350px !important; */
+	max-height: -webkit-fill-available !important;
 	margin-left: 10px !important;
 }
 /* .top-panels {
