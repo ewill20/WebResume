@@ -9,6 +9,14 @@ html, body {
 	background-image: url("../Images/concrete-texture.png") !important;
 	position: relative;
 }
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+  }
 div.container-fluid {
 	align-items: center;
 	margin: 20px 0 20px 0;
